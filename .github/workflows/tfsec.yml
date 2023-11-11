@@ -10,8 +10,7 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-  schedule:
-    - cron: '35 18 * * 2'
+  workflow_dispatch:
 
 jobs:
   tfsec:
