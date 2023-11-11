@@ -1,6 +1,6 @@
 # terraspace
 
-SAST tools testing on terraform with **TFlint** **TFSec** **Checkov** **terratest**
+SAST tools testing on terraform with **TFlint** **TFSec** **Checkov** **terratest** & **Snyk**
 
 #### provider config
 
@@ -53,6 +53,8 @@ func TestTerraformHelloWorldExample(t *testing.T) {
 tfsec .
 ```
 
+also tried using github actions
+
 ## TFlint
 
 tested through GHA (workflow](https://github.com/terraform-linters/setup-tflint)
@@ -77,3 +79,6 @@ terraform plan -out tf.plan
 terraform show -json tf.plan  > tf.json 
 checkov -f tf.json
 ```
+
+
+### TFLINT github actions validated, but has less options compare to other security scanning tools. Uploading security scan results through SARIF format to integrate with github security alerts
