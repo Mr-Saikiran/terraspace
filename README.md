@@ -1,6 +1,6 @@
 # terraspace
 
-Provision a personal terraform space with to test **TFlint** **TFSec** **Checkov** **terratest**
+SAST tools testing on terraform with **TFlint** **TFSec** **Checkov** **terratest**
 
 #### provider config
 
