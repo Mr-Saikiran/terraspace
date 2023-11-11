@@ -2,47 +2,47 @@ versioning     = "Enabled"
 
 acl            = "private" 
 
-bucket_name    = "webextestreceipts" 
+bucket_name    = "test1" 
 
-bucket2_name   = "webextestarchive-storage" 
+bucket2_name   = "test-2" 
 
-bucket3_name   = "webextestarchive-deletion" 
+bucket3_name   = "test-deletion" 
 
 encryption     = "AES256" 
 
-ami            = "ami-0f55a9d782a7612d8" 
+ami            = "ami-xxxxxx" 
 
 instance_id    = "t2.micro" 
 
-ec2_name       = "anc-01" 
+ec2_name       = "test-01" 
 
-ec2_2_name     = "anc-03" 
+ec2_2_name     = "test-03" 
 
-vpc_id         = "vpc-0c3bcaba944224c3f" 
+vpc_id         = "vpc-xxxxxxxxx" 
 
-subnet         = "subnet-014914742a0c3ecfa" 
+subnet         = "subnet-xxxxxxxxx" 
 
-subnet2        = "subnet-0ec01da7f9022e059" 
+subnet2        = "subnet-xxxxxxx" 
 
-subnet3        = "subnet-00d8c6763f4d53c5f" 
+subnet3        = "subnet-xxxxxxxxxxxxxx" 
 
-ecs_name       = "infrastaging-ecs" 
+ecs_name       = "lab-ecs" 
 
 container      = "enabled" 
 
-service_name   = "infrastaging-service" 
+service_name   = "lab-service" 
 
-family_ecs     = "tomcat-webserver" 
+family_ecs     = "tomcat" 
 
-launchtemplate = "infrastaging" 
+launchtemplate = "lab" 
 
-asg            = "infrastaging-asg" 
+asg            = "lab-asg" 
 
-eccp           = "infrastaging-eccp" 
+eccp           = "lab-eccp" 
 
-user           = "wbxadmin" 
+user           = "user1" 
 
-pwd            = "wbxadmin" 
+pwd            = "pwd" 
 
 storage        = 20 
 
@@ -54,6 +54,6 @@ engine         = "sqlserver-se"
 
 #zones          = ["eu-west-2a", "eu-west-2b"] 
 
-db             = "infrastaging-mssql" 
+db             = "lab-mssql" 
 
 dbversion      = "15.00.4153.1.v1" 
