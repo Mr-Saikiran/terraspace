@@ -1,12 +1,12 @@
-arn:aws:iam::382001262299:role/infra-staging-test 
+arn:aws:iam::123412341234:role/test 
 
  
 
-Created policies as below to provision resources through terraform 
+# Policy to provision resources through terraform
 
  
 
-For STSAssumerole (Custom policy) 
+# For STSAssumerole (Custom policy) 
 
 { 
 
@@ -20,7 +20,7 @@ For STSAssumerole (Custom policy)
 
             "Action": "sts:AssumeRole", 
 
-            "Resource": "arn:aws:iam::382001262299:role/infra-staging-test" 
+            "Resource": "arn:aws:iam::123412341234:role/test" 
 
         }, 
 
@@ -32,7 +32,7 @@ For STSAssumerole (Custom policy)
 
             ], 
 
-            "Resource": "arn:aws:iam::382001262299:role/infra-staging-test", 
+            "Resource": "arn:aws:iam::123412341234:role/test", 
 
             "Effect": "Allow" 
 
@@ -44,7 +44,7 @@ For STSAssumerole (Custom policy)
 
  
 
-For S3 (AmazonS3FullAccess) 
+# For S3 (AmazonS3FullAccess) 
 
 { 
 
@@ -74,7 +74,7 @@ For S3 (AmazonS3FullAccess)
 
  
 
-For EC2(AmazonEC2FullAccess) 
+# For EC2(AmazonEC2FullAccess) 
 
 { 
 
