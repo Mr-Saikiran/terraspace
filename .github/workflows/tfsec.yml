@@ -14,7 +14,7 @@ on:
 
 jobs:
   tfsec:
-    name: Run tfsec sarif report
+    name: Run tfsec 
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -23,15 +23,8 @@ jobs:
 
     steps:
       - name: Clone repo
-        uses: actions/checkout@v3
-
-      - name: Run tfsec
-        uses: aquasecurity/tfsec-sarif-action@9a83b5c3524f825c020e356335855741fd02745f
+        uses: actions/checkout@master
+      - name: tfsec
+        uses: aquasecurity/tfsec-pr-commenter-action@v1.1.0-beta.1
         with:
-          sarif_file: tfsec.sarif
-
-      - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          # Path to SARIF file relative to the root of the repository
-          sarif_file: tfsec.sarif
+          github_token: ${{ github.token }}
