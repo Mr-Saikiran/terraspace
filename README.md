@@ -2,6 +2,8 @@
 
 SAST tools testing on terraform with **TFlint** **TFSec** **Checkov** **terratest** & **Snyk**
 
+![](https://api.checklyhq.com/v1/badges/checks/5b97a51b-5f25-4e11-9252-720d09814ce6?style=plastic&theme=dark)
+
 #### provider config
 
 ```hcl
