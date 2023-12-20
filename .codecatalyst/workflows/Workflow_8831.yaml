@@ -1,0 +1,11 @@
+Name: Workflow_8831
+SchemaVersion: "1.0"
+
+# Optional - Set automatic triggers.
+Triggers:
+  - Type: Push
+    Branches:
+      - master
+
+# Required - Define action configurations.
+Actions:
